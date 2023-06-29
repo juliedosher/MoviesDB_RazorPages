@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Movies_RazorPages.Data;
 
@@ -10,9 +11,11 @@ using Movies_RazorPages.Data;
 namespace Movies_RazorPages.Migrations
 {
     [DbContext(typeof(Movies_RazorPagesContext))]
-    partial class Movies_RazorPagesContextModelSnapshot : ModelSnapshot
+    [Migration("20230629000651_ReleaseYear")]
+    partial class ReleaseYear
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

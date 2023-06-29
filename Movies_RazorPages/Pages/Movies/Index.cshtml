@@ -20,10 +20,13 @@
                 @Html.DisplayNameFor(model => model.Movie[0].Director)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Synopsis)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Movie[0].RuntimeMin)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Synopsis)
+                @Html.DisplayNameFor(model => model.Movie[0].ReleaseYear)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Language)
@@ -44,10 +47,13 @@
                 @Html.DisplayFor(modelItem => item.Director)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Synopsis)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.RuntimeMin)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Synopsis)
+                @Html.DisplayFor(modelItem => item.ReleaseYear)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Language)
