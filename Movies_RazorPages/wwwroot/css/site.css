@@ -11,8 +11,30 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  min-width: 100%;
 }
 
 body {
   margin-bottom: 60px;
+}
+
+.index-class {
+    text-align: center;
+} 
+
+.index-class h3 {
+    font-size: 20pt;
+    font-weight: normal;
+}
+
+.index-class p {
+    font-size: 16pt;
+}
+
+.about-class {
+    text-align: center;
+}
+
+.about-class p {
+    font-size: 16pt;
 }
