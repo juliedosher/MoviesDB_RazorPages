@@ -16,13 +16,13 @@ namespace Movies_RazorPages.Models
         public string Synopsis { get; set; }
 
         [Display(Name = "Runtime (minutes)")]
+        [Range(1, 999, ErrorMessage = "Please enter an integer between 1-999")]
         [Required]
-        [StringLength(3, MinimumLength = 1)]
         public int RuntimeMin { get; set; }
 
 
-        [StringLength(4, MinimumLength = 4)]
         [Display(Name = "Release Year")]
+        [Range(1000, 9999, ErrorMessage = "Please enter in the format YYYY")]
         [Required]
         public int ReleaseYear { get; set; }
 
